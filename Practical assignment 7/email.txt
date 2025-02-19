@@ -1,0 +1,73 @@
+%s +OK message follows
+Delivered-To: lerato15278@gmail.com
+Received: by 2002:a05:6f02:6792:b0:69:ed71:e2cb with SMTP id x18csp75794rcg;
+        Tue, 7 May 2024 12:00:14 -0700 (PDT)
+X-Received: by 2002:a25:5505:0:b0:de5:5cfa:a2f8 with SMTP id 3f1490d57ef6-de
+Message ID: %s 7
+Message Body:
+%s bb9dc0d4emr539913276.53.1715108414211;
+        Tue, 07 May 2024 12:00:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1715108414; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vnAz8X+gUWrj5nM2r1sztx1+KJRepy78f4HUbdKBPAWmdkLfJNLNOFEPAPXDkLRjeo
+         sTH7QUHa0NErpK0TV43Hqpd2BHG30ImK3c0qtvKdZmAbGIuRmZrAGs7uJ4gtP0Fr+JKp
+         TYcvKRtq0YgCuZlyhISm9he8tgcszBgXawbeAycvrvQHcMtwe7C5mzOIJYc3ak/y4HIe
+         MmnXIxG2W5tkd9eJoVfOmjYbRu9vz7Er/P3u3LlSIDkbesmg0rsCzrULjvnos0LqNJjW
+         PiFr0LEprZr
+Message ID: %s 6
+Message Body:
+%s rkXlFyKusfDOXE/lrmsEz5SnWYBRSwBf2GljUdvB9j9laXNXeBthVCYdU
+         wYdw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Y5VREBBQJSQ8H8J5j+jqswBQzrF5tZsAVYgnY8kAxUc=;
+        fh=Vkm7ocrPyn0e5ONp3whPPEqidI6yRoSs/jNArpjnu+M=;
+        b=ozeT3WcnckK5wJMDboLOTD4g0WHDWvqvxssJmk12kKfH6aZxb1Cw9AavE6wlSO5Dx7
+         JXGrS6F5ngKlTRWumJRF5TY2vRGZ727uQiIi96yDws8o6sB048rmuZp5/sZ9DlWRmsP7
+         VHWbvkNnarXI7Q6UhWCvskxes6geJzlrOT3z5HuRIQaOY/iZyizlIpM5eQx4OSjD5LNe
+         Ooa9i/V+BqAVRc2k5UcON9/kUgjF7rPRIUUheHOIDcK/uMZO9k6xPV0m4c6gYajYUEcY
+         MfYX7VubVhCNQsCklsRAE2x2y2XN0ZnWOYuhvggkohTf/UUpbDu0HjoEuyHPSnUScwbL
+         fTLw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=cXnCjrPA;
+       spf=pass (google.com: domain of leratoemails@gmail.com designates 209.85.220.65 as permitted sender) s
+Message ID: %s 5
+Message Body:
+%s mtp.mailfrom=leratoemails@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <leratoemails@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id i5-20020a256d05000000b00dd3f55dae51sor7858565ybc.17.2024.05.07.12.00.14
+        for <lerato15278@gmail.com>
+        (Google Transport Security);
+        Tue, 07 May 2024 12:00:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of leratoemails@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=cXnCjrPA;
+       spf=pass (google.com: domain of leratoemails@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=leratoemails@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1715108413; x=1715713213; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Y5VREBBQJSQ8H8J5j+jqswBQzrF5tZsAVYgnY8kAxUc=;
+        b=cXnCjrPAYfe5YcTo6DTwUAFtgjUGTYS6s79jM6n0P4QgILzUJPKx73o2edTaCzc
+Message ID: %s 4
+Message Body:
+%s nm3
+         CSXE793hedaa6W9Nq5pZUWRvPojkNUkQSrjWJpmD7PbEaRrYc6v8FS2qG1Fkm4hk4xwe
+         ldRc/v+XH0UWOmZ2x5+3KmYV1fWd3t7p15q68Y5nm47bvozYcY3v4eVt8SK3U9hol53X
+         9JVgvUgzVpRv+fclqTBrDMKOTiQxOPfBbAkgCuU3m6vHb1O/14J9KhYhbbWMtDT/cdyl
+         B7hAapKDGh/MfOjbM9xBzZ8nQNdMH0GwKR9aY5ncl+dGKdQpx7aBEUNyWglG2eIDQtdS
+         1JPA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1715108413; x=1715713213;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Y5VREBBQJSQ8H8J5j+jqswBQzrF5tZsAVYgnY8kAxUc=;
+        b=LcSmH0RBXT9CgzVdwOtNP8iAlymxpTA7EPqkV+Ge+YG+SIs3ui5A/OZ2k053YVLXBJ
+
+Message ID: %s 3
+Message Body:
+%s

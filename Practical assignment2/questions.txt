@@ -1,0 +1,27 @@
+?what is 1
+-2
+-3
+-4
++1
+?The successor of IPv4 is:
+-TCP
+-Ethernet
+-IPv5
++IPv6
+-None of the above
+?DNS normally uses the following transport layer protocol
+-TCP
++UDP
+-IEEE 802.3
+-All of the above
+?what is 0
+-2
+-3
+-4
+-1
+?my name is
++lerato
+-gugu
++elizabeth
+-rose
+
